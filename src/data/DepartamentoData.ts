@@ -40,9 +40,9 @@ export class DepartamentoData {
                         horario_funcionamento: horario_funcionamento,
                         gerente_id: gerente_id
                     }
-                ], ['id']);
+                ]);
 
-            const novoId: number = novoDepto[0].id;
+            const novoId: number = novoDepto[0];
             return novoId;
         } catch (error: any) {
             throw new Error(error.sqlMessage || error.message);
